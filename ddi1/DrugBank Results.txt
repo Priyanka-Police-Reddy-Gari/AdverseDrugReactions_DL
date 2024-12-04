@@ -1,0 +1,63 @@
+Microsoft Windows [Version 10.0.10586]
+(c) 2015 Microsoft Corporation. All rights reserved.
+
+C:\Users\Aswiz>cd..
+
+C:\Users>cd..
+
+C:\>e:
+
+E:\>cd VIT
+
+E:\VIT>cd rbl
+
+E:\VIT\RBL>ddi1
+'ddi1' is not recognized as an internal or external command,
+operable program or batch file.
+
+E:\VIT\RBL>cd ddi1
+
+E:\VIT\RBL\ddi1>python main.py
+total_files_to_read: 569  from dir:  E:/VIT/RBL/ddi/dataset/DDICorpus/Train/DrugBank/
+100%|¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 569/569 [00:02<00:00, 267.48it/s]
+total_files_to_read: 569  from dir:  E:/VIT/RBL/ddi/dataset/DDICorpus/Train/DrugBank/
+100%|¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 569/569 [00:02<00:00, 254.16it/s]
+total_files_to_read: 569  from dir:  E:/VIT/RBL/ddi/dataset/DDICorpus/Train/DrugBank/
+100%|¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 569/569 [00:03<00:00, 179.81it/s]
+frequent_phrase:  [('(e_be', ',_af'), ('(e_be', ',_be'), ('(e_be', '._af'), ('(e_be', '._be'), ('(e_be', 'DRUG')]
+total_files_to_read: 569  from dir:  E:/VIT/RBL/ddi/dataset/DDICorpus/Train/DrugBank/
+100%|¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 569/569 [00:03<00:00, 167.56it/s]
+   Unnamed: 0                                      sentence_text              e1               e2 relation_type                                normalized_sentence
+0           0  Concurrent administration of a TNF antagonist ...  TNF antagonist          ORENCIA        effect  Concurrent_bf administration_bf TNF_bf antagon...
+1           1  Concurrent therapy with ORENCIA and TNF antago...         ORENCIA  TNF antagonists        advise  Concurrent_bf therapy_bf DRUG TNF_be antagonis...
+2           2  There is insufficient experience to assess the...         ORENCIA         anakinra        advise  There_bf insufficient_bf experience_bf assess_...
+3           3  Co-administration of naltrexone with Acamprosa...      naltrexone      Acamprosate     mechanism  Co-administration_bf DRUG OTHER_DRUG produced_...
+4           4  Patients taking Acamprosate concomitantly with...     Acamprosate  antidepressants        effect  Patients_bf taking_bf DRUG concomitantly_be OT...
+X:  (3006, 26667) Y :  [3006]
+Score :  0.8986710963455149
+              precision    recall  f1-score   support
+
+           0       0.88      0.95      0.91       193
+           1       0.94      0.86      0.90       242
+           2       0.87      0.90      0.89       135
+           3       0.85      0.88      0.86        32
+
+   micro avg       0.90      0.90      0.90       602
+   macro avg       0.89      0.90      0.89       602
+weighted avg       0.90      0.90      0.90       602
+
+total_files_to_read: 158  from dir:  E:/VIT/RBL/ddi/dataset/DDICorpus/Test/test_for_ddi_extraction_task/DrugBank/
+100%|¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 158/158 [00:01<00:00, 152.80it/s]
+              precision    recall  f1-score   support
+
+           0       0.79      0.89      0.84       224
+           1       0.69      0.82      0.75       232
+           2       0.81      0.73      0.77       160
+           3       0.88      0.26      0.40        80
+
+   micro avg       0.76      0.76      0.76       696
+   macro avg       0.79      0.68      0.69       696
+weighted avg       0.77      0.76      0.74       696
+
+
+E:\VIT\RBL\ddi1>
