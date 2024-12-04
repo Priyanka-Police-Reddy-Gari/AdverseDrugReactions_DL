@@ -1,0 +1,109 @@
+Microsoft Windows [Version 10.0.10586]
+(c) 2015 Microsoft Corporation. All rights reserved.
+
+C:\Users\Aswiz>cd..
+
+C:\Users>cd..
+
+C:\>e:
+
+E:\>cd VIT
+
+E:\VIT>cd "Win Sem"
+
+E:\VIT\Win Sem>cd..
+
+E:\VIT>cd RBL
+
+E:\VIT\RBL>cd ddi
+
+E:\VIT\RBL\ddi>pyhton main.py
+'pyhton' is not recognized as an internal or external command,
+operable program or batch file.
+
+E:\VIT\RBL\ddi>python main.py
+total_files_to_read: 142  from dir:  E:/VIT/RBL/ddi/dataset/DDICorpus/Train/MedLine/
+  0%|                                                                                          | 0/142 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "main.py", line 6, in <module>
+    training_main()
+  File "E:\VIT\RBL\ddi\training\train.py", line 91, in main
+    df = get_dataset_dataframe()
+  File "E:\VIT\RBL\ddi\dataset\read_dataset.py", line 89, in get_dataset_dataframe
+    print(pair.attributes().items())
+TypeError: 'NamedNodeMap' object is not callable
+
+E:\VIT\RBL\ddi>python main.py
+total_files_to_read: 142  from dir:  E:/VIT/RBL/ddi/dataset/DDICorpus/Train/MedLine/
+100%|¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 142/142 [00:01<00:00, 125.61it/s]
+total_files_to_read: 142  from dir:  E:/VIT/RBL/ddi/dataset/DDICorpus/Train/MedLine/
+100%|¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 142/142 [00:00<00:00, 456.76it/s]
+total_files_to_read: 142  from dir:  E:/VIT/RBL/ddi/dataset/DDICorpus/Train/MedLine/
+100%|¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 142/142 [00:00<00:00, 709.52it/s]
+frequent_phrase:  [(',_af', ',_be'), (',_af', '._af'), (',_af', 'DRUG'), (',_af', 'OTHER_DRUG'), (',_af', 'high_af')]
+total_files_to_read: 142  from dir:  E:/VIT/RBL/ddi/dataset/DDICorpus/Train/MedLine/
+100%|¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 142/142 [00:00<00:00, 369.89it/s]
+   Unnamed: 0  ...                                normalized_sentence
+0           0  ...  The_bf antimicrobial_bf combinations_bf DRUG f...
+1           1  ...  Synergism_bf observed_bf DRUG combined_be OTHE...
+2           2  ...  DRUG alone_be effect_be tyrosine_be phosphoryl...
+3           3  ...  DRUG alone_be found_be effect_be CAS_be ,_be c...
+4           4  ...  Using_bf situ_bf hybridization_bf ,_bf observe...
+
+[5 rows x 6 columns]
+X:  (199, 3938) Y :  [199]
+Traceback (most recent call last):
+  File "main.py", line 6, in <module>
+    training_main()
+  File "E:\VIT\RBL\ddi\training\train.py", line 105, in main
+    classification_report()
+TypeError: classification_report() missing 2 required positional arguments: 'y_true' and 'y_pred'
+
+E:\VIT\RBL\ddi>python main.py
+frequent_phrase:  [(',_af', ',_be'), (',_af', '._af'), (',_af', 'DRUG'), (',_af', 'OTHER_DRUG'), (',_af', 'high_af')]
+   Unnamed: 0  ...                                normalized_sentence
+0           0  ...  The_bf antimicrobial_bf combinations_bf DRUG f...
+1           1  ...  Synergism_bf observed_bf DRUG combined_be OTHE...
+2           2  ...  DRUG alone_be effect_be tyrosine_be phosphoryl...
+3           3  ...  DRUG alone_be found_be effect_be CAS_be ,_be c...
+4           4  ...  Using_bf situ_bf hybridization_bf ,_bf observe...
+
+[5 rows x 6 columns]
+X:  (199, 3938) Y :  [199]
+Score :  0.875
+C:\Users\Aswiz\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\metrics\classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00         1
+           1       0.00      0.00      0.00         2
+           2       0.88      0.78      0.82         9
+           3       0.87      0.96      0.92        28
+
+   micro avg       0.88      0.88      0.88        40
+   macro avg       0.69      0.69      0.68        40
+weighted avg       0.83      0.88      0.85        40
+
+total_files_to_read: 33  from dir:  E:/VIT/RBL/ddi/dataset/DDICorpus/Test/test_for_ddi_extraction_task/MedLine/
+100%|¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦| 33/33 [00:01<00:00, 22.97it/s]
+C:\Users\Aswiz\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\metrics\classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+              precision    recall  f1-score   support
+
+           0       1.00      0.14      0.25         7
+           1       0.00      0.00      0.00         2
+           2       0.62      0.38      0.47        21
+           3       0.73      0.96      0.83        51
+
+   micro avg       0.72      0.72      0.72        81
+   macro avg       0.59      0.37      0.39        81
+weighted avg       0.71      0.72      0.67        81
+
+
+E:\VIT\RBL\ddi>
+
+
+
+
+
+
